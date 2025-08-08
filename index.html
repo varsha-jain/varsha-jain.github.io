@@ -1,30 +1,705 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title>Varsha Jain - Personal Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="skills.html">Skills</a>
-            <a href="achievements.html">Achievements</a>
-            <a href="certifications.html">Certifications</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section class="profile-section">
-            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-            <div>
-                <h1>Welcome to My Website!</h1>
-                <p>Hello, I'm Varsha Jain. Explore my projects, skills, achievements, certifications, and get in touch!</p>
+<body class="is-preload landing">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="index.html"></a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#banner">Home</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#resume">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="documents/Varsha_Jain_Resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="https://www.linkedin.com/in/varsha-jain/" class="icon brands alt fa-linkedin-in"><span class="label"></span></a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Banner -->
+        <section id="banner">
+            <div class="content">
+                <header>
+                    <h2>I'm Varsha Jain</h2><br/>
+                    <p><span id="typed-text"></span></p><br />
+                    <p>I currently work at Microsoft where I work on challenging projects contributing to Azure's success.</p>
+                </header>
+                <span class="image"><img src="images/profile-pic.jpg" alt="" /></span>
             </div>
+            <a href="#experience" class="goto-next scrolly">Next</a>
         </section>
-    </main>
-</body>
+
+        <!-- Experience -->
+				<section id="experience" class="spotlight style2 right">
+					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Professional Experience</h2>
+						</header>
+						<p>Throughout my career, I have gained valuable experience working in diverse environments and tackling complex challenges. My professional journey has equipped me with strong technical skills, leadership abilities, and a deep understanding of industry best practices.</p>
+					</div>
+					
+					<!-- Professional Experience Timeline - Outside Content Pane -->
+					<div class="experience-timeline-left">
+						<div class="job-card">
+							<div class="company-logo">
+								<img src="images/microsoft_logo.jpg" alt="Microsoft Logo" style="width: 60px; height: 60px; object-fit: contain;">
+							</div>
+							<div class="job-info">
+								<h3>Software Engineer</h3>
+								<h4>Microsoft</h4>
+								<span class="duration">Aug 2021 - Present</span>
+								<p class="job-description">Contributing to Azure's success through challenging projects and innovative solutions in cloud computing.</p>
+								<ul class="job-responsibilities">
+									<li>Implemented solution to help identify when machines are impacted by upcoming planned maintenance thereby deflecting <strong>20 tickets a month</strong></li>
+									<li>Designed and implemented the backend for a scalable distributed system to help users report issues in their Azure infrastructure. <strong>19M+ impacts</strong> processed by the system. <a href="https://learn.microsoft.com/en-us/azure/azure-impact-reporting/" target="_blank">Azure Impact Reporting</a></li>
+									<li>Ensured <strong>99.9% availability</strong> of the system</li>
+									<li>Led the design and implementation of system to identify potential root cause of the issues reported by customers, <strong>80M+ insights</strong> received and processed by the system</li>
+									<li>Collaborated with multiple teams to ensure bad deployment is stopped thereby ensuring reduction in customer impact, <strong>100+ issues</strong> stopped</li>
+									<li>Improved code coverage and testing to <strong>85%</strong></li>
+									<li>Conducted and led multiple sessions across teams and leadership for project deep dive</li>
+									<li>Onboarded multiple customers to the system and worked closely to ensure smooth onboarding</li>
+									<li>Acted as backup and ensured effective team collaboration and work during managerial absence</li>
+									<li>Improved existing systems thereby improving duplicate issues by <strong>33%</strong></li>
+									<li>Automated incident creation workflow and worked with third party customer thereby reducing TTD by <strong>50%</strong> and generating <strong>5+ Sev 2 incidents</strong> for service teams thus ensuring faster TTM</li>
+									<li>Documented and setup alerts mechanism for monitoring systems to ensure high availability and reliability</li>
+									<li>Developed Copilot AI Agent to answer questions related to azure management plane</li>
+									<li>Mentored interns and new hires and ensured inclusive behavior also recognized by peers</li>
+									<li>Developed front end for a service that helps to troubleshoot issues related to the operating system (OS) that can affect a VM. <a href="https://learn.microsoft.com/en-us/troubleshoot/azure/virtual-machines/windows/vm-inspector-azure-virtual-machines" target="_blank">VM Inspector</a></li>
+								</ul>
+								<div class="technologies">
+									<span class="tech-tag">Azure</span>
+									<span class="tech-tag">C#</span>
+									<span class="tech-tag">.NET</span>
+									<span class="tech-tag">Kubernetes</span>
+									<span class="tech-tag">Distributed Systems</span>
+									<span class="tech-tag">AI/ML</span>
+									<span class="tech-tag">Copilot</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="job-card">
+							<div class="company-logo">
+								<img src="images/honeywell_logo.jpg" alt="Honeywell Logo" style="width: 60px; height: 60px; object-fit: contain;">
+							</div>
+							<div class="job-info">
+								<h3>Software Engineer</h3>
+								<h4>Honeywell</h4>
+								<span class="duration">Jan 2019 - Aug 2021</span>
+								<p class="job-description">Specialized in Warehouse Execution Systems and Supply Chain solutions, developing scalable microservices for automated warehouse operations.</p>
+								<ul class="job-responsibilities">
+									<li>Developed scalable micro-services for Automated Storage & Retrieval Systems, AGV/AMR for efficient warehouse operations</li>
+									<li>Follow BDD style and wrote component tests/integration tests using Cucumber</li>
+									<li>Utilized Kafka for pub/sub method to enable UI for the consumption of data</li>
+									<li>Performed security analysis/binary scan of microservices</li>
+									<li>Collaboratively work with teammates, product owners, QA in an agile environment</li>
+									<li>Participate in solving and debugging production issues and lead towards solution</li>
+									<li>Supported customer on-site and resolved critical issues</li>
+									<li>Deployed components to QA environment</li>
+									<li>🏆 Honeywell Silver Award recipient for demonstrating "Go Beyond" behavior within 3 months of joining</li>
+								</ul>
+								<div class="technologies">
+									<span class="tech-tag">Java</span>
+									<span class="tech-tag">Spring Boot</span>
+									<span class="tech-tag">Kafka</span>
+									<span class="tech-tag">PostgreSQL</span>
+									<span class="tech-tag">MySQL</span>
+									<span class="tech-tag">Docker</span>
+									<span class="tech-tag">Cucumber</span>
+									<span class="tech-tag">Jenkins</span>
+									<span class="tech-tag">RabbitMQ</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="job-card">
+							<div class="company-logo">
+								<img src="images/honeywell_logo.jpg" alt="Honeywell Logo" style="width: 60px; height: 60px; object-fit: contain;">
+							</div>
+							<div class="job-info">
+								<h3>Software Developer Intern</h3>
+								<h4>Honeywell</h4>
+								<span class="duration">Sep 2017 - Dec 2017 · 4 mos</span>
+								<p class="job-description">Worked on diverse full-stack development projects in Atlanta Metropolitan Area, focusing on learning portals, cloud solutions, and mobile applications for the aviation industry.</p>
+								<ul class="job-responsibilities">
+									<li>Worked on 4 projects during tenure, showcasing versatility and adaptability</li>
+									<li>Developed a module to securely store text files in SQL Server</li>
+									<li>Coded project components to retrieve legacy data from database as JSON and store in cloud</li>
+									<li>Developed a full stack learning portal for Honeywell employees using open edX</li>
+									<li>Wrote a Python package to incorporate Honeywell SSO for seamless employee login functionality</li>
+									<li>Formulated queries to access user and course data from MySQL and MongoDB for better reporting</li>
+									<li>Programmed complete web application and mobile app for airlines industry solutions</li>
+									<li>Designed and developed module for pushing JSON data to cloud for web and mobile app consumption</li>
+									<li>Demoed projects to senior executives, VP and leadership team</li>
+									<li>🏆 Received STAR and BRAVO awards for demonstrating "act with urgency" Honeywell behavior</li>
+								</ul>
+								<div class="technologies">
+									<span class="tech-tag">C#</span>
+									<span class="tech-tag">Python</span>
+									<span class="tech-tag">HTML5</span>
+									<span class="tech-tag">CSS</span>
+									<span class="tech-tag">open edX</span>
+									<span class="tech-tag">Entity Framework</span>
+									<span class="tech-tag">MS SQL Server</span>
+									<span class="tech-tag">MySQL</span>
+									<span class="tech-tag">MongoDB</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="job-card">
+							<div class="company-logo">
+								<img src="images/accenture_logo.jpg" alt="Accenture Logo" style="width: 60px; height: 60px; object-fit: contain;">
+							</div>
+							<div class="job-info">
+								<h3>Software Engineer</h3>
+								<h4>Accenture</h4>
+								<span class="duration">Aug 2014 - Jun 2016 · 1 yr 11 mos</span>
+								<p class="job-description">Developed robust software solutions using Java and Oracle configurator, enhancing product implementations and driving business growth in Mumbai Metropolitan Region.</p>
+								<ul class="job-responsibilities">
+									<li>Extensively used Java to develop functionalities that were out of scope of implementation for Oracle configurator</li>
+									<li>Enhanced existing product implementations using configurator rules, model structure and UI</li>
+									<li>Implemented new product features which led to increase in sales by 20% and published the product to test environment</li>
+									<li>Deployed the product to production at appropriate time during the Software Development Lifecycle</li>
+								</ul>
+								<div class="technologies">
+									<span class="tech-tag">Java</span>
+									<span class="tech-tag">Oracle</span>
+									<span class="tech-tag">Configurator</span>
+									<span class="tech-tag">SDLC</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="job-card">
+							<div class="company-logo">
+								<img src="images/indian_institute_of_technology_roorkee_logo.jfif" alt="Indian Institute of Technology, Roorkee Logo" style="width: 60px; height: 60px; object-fit: contain;">
+							</div>
+							<div class="job-info">
+								<h3>Android Application Summer Intern</h3>
+								<h4>Indian Institute of Technology, Roorkee</h4>
+								<span class="duration">Jun 2012 - Jul 2012 · 2 mos</span>
+								<p class="job-description">Developed innovative Android applications focusing on security and location-based services with significant performance optimizations.</p>
+								<ul class="job-responsibilities">
+									<li>Developed a theft recovery android app which notifies user as soon as SIM card is replaced</li>
+									<li>Programmed a module for location based android app which incorporated geolocation, google map API and retrieved satellite data (latitude, longitude, speed, time) for further analysis</li>
+									<li>Improved the app to reduce battery consumption by 25%</li>
+								</ul>
+								<div class="technologies">
+									<span class="tech-tag">Android</span>
+									<span class="tech-tag">Java</span>
+									<span class="tech-tag">Google Maps API</span>
+									<span class="tech-tag">Geolocation</span>
+									<span class="tech-tag">GPS</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#resume" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Skills -->
+				<section id="resume" class="wrapper style1 special fade-up">
+					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+					<div class="container">
+						<header class="major">
+							<h2>Skills & Expertise</h2>
+							<p>A comprehensive overview of my technical and professional capabilities</p>
+						</header>
+						
+						<!-- Animated Skills Progress Bars -->
+						<div class="skills-container">
+							<div class="skills-column">
+								<div class="skill-item">
+									<div class="skill-header">
+										<span class="skill-name">
+											<i class="fab fa-js-square"></i> Azure
+										</span>
+										<span class="skill-percentage">80%</span>
+									</div>
+									<div class="skill-bar">
+										<div class="skill-progress" data-skill="80"></div>
+									</div>
+								</div>
+								
+								<div class="skill-item">
+									<div class="skill-header">
+										<span class="skill-name">
+											<i class="fab fa-python"></i> C#
+										</span>
+										<span class="skill-percentage">75%</span>
+									</div>
+									<div class="skill-bar">
+										<div class="skill-progress" data-skill="75"></div>
+									</div>
+								</div>
+								
+								<div class="skill-item">
+									<div class="skill-header">
+										<span class="skill-name">
+											<i class="fab fa-react"></i> Distributed Systems, System Design
+										</span>
+										<span class="skill-percentage">80%</span>
+									</div>
+									<div class="skill-bar">
+										<div class="skill-progress" data-skill="80"></div>
+									</div>
+								</div>
+								
+								<div class="skill-item">
+									<div class="skill-header">
+										<span class="skill-name">
+											<i class="fab fa-node-js"></i> Java
+										</span>
+										<span class="skill-percentage">75%</span>
+									</div>
+									<div class="skill-bar">
+										<div class="skill-progress" data-skill="75"></div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="skills-column">
+								<div class="skill-item">
+									<div class="skill-header">
+										<span class="skill-name">
+											<i class="fas fa-database"></i> SQL, Kusto Query Language
+										</span>
+										<span class="skill-percentage">75%</span>
+									</div>
+									<div class="skill-bar">
+										<div class="skill-progress" data-skill="75"></div>
+									</div>
+								</div>
+								
+								<div class="skill-item">
+									<div class="skill-header">
+										<span class="skill-name">
+											<i class="fab fa-aws"></i> PowerBi
+										</span>
+										<span class="skill-percentage">80%</span>
+									</div>
+									<div class="skill-bar">
+										<div class="skill-progress" data-skill="80"></div>
+									</div>
+								</div>
+								
+								<div class="skill-item">
+									<div class="skill-header">
+										<span class="skill-name">
+											<i class="fab fa-git-alt"></i> AWS
+										</span>
+										<span class="skill-percentage">75%</span>
+									</div>
+									<div class="skill-bar">
+										<div class="skill-progress" data-skill="75"></div>
+									</div>
+								</div>	
+								
+							</div>
+						</div>
+					</div>
+					<a href="#education" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Education -->
+				<section id="education" class="spotlight style3 left">
+					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Education</h2>
+						</header>
+						<p>My educational background has provided me with a strong foundation in computer science and information systems, equipping me with both theoretical knowledge and practical skills essential for my career in technology.</p>
+					</div>
+					
+					<!-- Education Timeline -->
+					<div class="education-timeline-right">
+						<div class="education-card">
+							<div class="university-logo">
+								<img src="images/northeastern_university_logo.jfif" alt="Northeastern University Logo" style="width: 60px; height: 60px; object-fit: contain;">
+							</div>
+							<div class="education-info">
+								<h3>Master's degree, Information Systems</h3>
+								<h4>Northeastern University</h4>
+								<span class="duration">2016 - 2018</span>
+								<p class="grade">Grade: 3.8</p>
+								<p class="education-description">Advanced studies in information systems, focusing on modern technology solutions and enterprise systems.</p>
+								<div class="activities">
+									<h5>Activities and Societies:</h5>
+									<span class="activity-tag">NUSanskriti</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="education-card">
+							<div class="university-logo">
+								<img src="images/k_j_somaiya_school_of_engineering_logo.jfif" alt="K.J. Somaiya School of Engineering Logo" style="width: 60px; height: 60px; object-fit: contain;">
+							</div>
+							<div class="education-info">
+								<h3>Bachelor of Technology (BTech), Computer Engineering</h3>
+								<h4>K.J.Somaiya College of Engineering</h4>
+								<span class="duration">2010 - 2014</span>
+								<p class="grade">Grade: 4.0</p>
+								<p class="education-description">Comprehensive undergraduate program in computer engineering with focus on software development, algorithms, and system design.</p>
+								<div class="activities">
+									<h5>Activities and Societies:</h5>
+									<span class="activity-tag">Member of CSI</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#projects" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Projects -->
+				<section id="projects" class="wrapper style1 special">
+					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+					<div class="container">
+						<header class="major">
+							<h2>Projects</h2>
+						</header>
+						<div class="projects-grid">
+							<div class="project-tile">
+								<div class="tile-inner">
+									<div class="tile-front">
+										<div class="project-icon">
+											<i class="fas fa-ticket-alt"></i>
+										</div>
+										<h3>T-KitHub</h3>
+										<p class="tech-stack">Angular 4, Node.js, MongoDB</p>
+									</div>
+									<div class="tile-back">
+										<h4>T-KitHub: Online Ticket Booking Application</h4>
+										<p>Full-stack web application for online ticket booking with comprehensive event management, filtering, and booking capabilities integrated with external APIs.</p>
+										<ul class="features">
+											<li>End-to-end workflow from filtering to ticket download</li>
+											<li>Ticketmaster API integration for event data</li>
+											<li>Google Maps API with geolocation features</li>
+											<li>CRUD operations for coupon management</li>
+											<li>Authentication with Passport.js</li>
+											<li>Email notifications with NodeMailer</li>
+											<li>Timezone handling with Moment.js</li>
+											<li>Countdown timers for upcoming events</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<div class="project-tile">
+								<div class="tile-inner">
+									<div class="tile-front">
+										<div class="project-icon">
+											<i class="fas fa-tasks"></i>
+										</div>
+										<h3>EasyTask</h3>
+										<p class="tech-stack">Android Studio, Java, SQLite</p>
+									</div>
+									<div class="tile-back">
+										<h4>EasyTask: To-Do Android App</h4>
+										<p>A comprehensive to-do Android application with cloud synchronization, notifications, and intuitive task management features.</p>
+										<ul class="features">
+											<li>Aesthetically pleasing and user-friendly interface</li>
+											<li>Firebase integration for online data storage</li>
+											<li>Push notifications for task reminders</li>
+											<li>Dialog fragments for easy task editing</li>
+											<li>SQLite local database for offline functionality</li>
+										</ul>
+										<div style="margin-top: 1rem; text-align: center;">
+											<a href="https://imgur.com/TOICisK" target="_blank" class="button small" style="background: #8B5CF6; color: white; padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none; display: inline-block; font-size: 0.85rem; font-weight: 500; box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3); transition: all 0.3s ease; text-align: center;">App Video</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="project-tile">
+								<div class="tile-inner">
+									<div class="tile-front">
+										<div class="project-icon">
+											<i class="fas fa-wallet"></i>
+										</div>
+										<h3>Expense Tracker</h3>
+										<p class="tech-stack">Android Studio, Java, SQLite</p>
+									</div>
+									<div class="tile-back">
+										<h4>Expense Tracker: Daily Expense Management App</h4>
+										<p>Developed an Android application to manage daily expenses with intuitive interface and comprehensive expense tracking capabilities.</p>
+										<ul class="features">
+											<li>User-friendly UI for adding and viewing expenses</li>
+											<li>Monthly and yearly expense summaries</li>
+											<li>SQLite database for local data storage</li>
+											<li>Expense categorization and filtering</li>
+											<li>Comprehensive expense reporting</li>
+										</ul>
+										<div style="margin-top: 1rem; text-align: center;">
+											<a href="https://github.com/varsha-jain/ExpenseTracker" target="_blank" class="button small" style="background: #8B5CF6; color: white; padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none; display: inline-block; font-size: 0.85rem; font-weight: 500; box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3); transition: all 0.3s ease; text-align: center;">View on GitHub</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="project-tile">
+								<div class="tile-inner">
+									<div class="tile-front">
+										<div class="project-icon">
+											<i class="fas fa-search"></i>
+										</div>
+										<h3>Search Engine for Image Retrieval</h3>
+										<p class="tech-stack">Computer Vision, Machine Learning, GUI</p>
+									</div>
+									<div class="tile-back">
+										<h4>Search Engine for Image Retrieval</h4>
+										<p>Advanced image retrieval system using color and texture feature extraction with Vector Quantization for fast image search and retrieval from large databases.</p>
+										<ul class="features">
+											<li>Feature extraction using color and texture histograms</li>
+											<li>Gray Level co-occurrence matrix implementation</li>
+											<li>Vector Quantization with codebook generation</li>
+											<li>Fast encoding and decoding algorithms</li>
+											<li>Performance analysis on 1000+ image database</li>
+											<li>User-friendly GUI for color/texture search</li>
+											<li>Published research in International Journal</li>
+											<li>Combination search capabilities</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<div class="project-tile">
+								<div class="tile-inner">
+									<div class="tile-front">
+										<div class="project-icon">
+											<i class="fas fa-spell-check"></i>
+										</div>
+										<h3>Acronyms</h3>
+										<p class="tech-stack">Android Studio, Java, SQLite</p>
+									</div>
+									<div class="tile-back">
+										<h4>Acronyms: Dictionary Android App</h4>
+										<p>Developed an Android application that displays full forms of acronyms from various categories including Medical, Technology, and Miscellaneous with user contribution features.</p>
+										<ul class="features">
+											<li>Comprehensive acronym database across multiple categories</li>
+											<li>Medical, Technology, and Miscellaneous categories</li>
+											<li>User-friendly GUI for easy navigation</li>
+											<li>SQLite database for local data storage</li>
+											<li>User contribution system for new acronyms</li>
+											<li>Category management functionality</li>
+											<li>Search and browse capabilities</li>
+											<li>Expandable dictionary with user input</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#achievements" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Achievements -->
+				<section id="achievements" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="images/pic03.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Achievements & Recognition</h2>
+							<p>Milestones and accomplishments in my professional journey</p>
+						</header>
+						<p>I take pride in the recognition and achievements I've earned throughout my career. These accomplishments reflect my dedication to excellence, continuous learning, and commitment to delivering outstanding results in every project I undertake.</p>
+					</div>
+					
+					<!-- Achievements Timeline - Right Side -->
+					<div class="achievements-timeline-right">
+						<div class="achievement-card">
+							<div class="company-logo">
+								<img src="images/microsoft_logo.jpg" alt="Microsoft Logo" style="width: 60px; height: 60px; object-fit: contain;">
+							</div>
+							<div class="achievement-info">
+								<h3>Mentor, Team Support and Knowledge Sharing</h3>
+								<h4>Microsoft</h4>
+								<span class="duration">Oct 2024</span>
+								<p class="achievement-description">Varsha has been incredibly welcoming and inspiring to new hires. She excels in meetings by conveying information clearly, even for those with little prior knowledge. Her ability to see the bigger picture and drive meaningful conversations make her a role model. In one-on-one interactions, Varsha is approachable, helpful and responsive, providing valuable answers and resources promptly. Her warmth and willingness to help make others feel comfortable seeking assistance. Additionally, Varsha promotes a culture of doing the right thing and is always available for discussions that foster information sharing.</p>
+								<img src="images/mentor-award.jfif" alt="Mentor Award" style="width: 450px; height: 350px; object-fit: contain; margin-top: 1rem; border: 2px solid rgba(255, 255, 255, 0.3); border-radius: 8px; background: rgba(255, 255, 255, 0.05); padding: 0.5rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+
+                            </div>
+						</div>
+						
+						<div class="achievement-card">
+							<div class="company-logo">
+								<img src="images/honeywell_logo.jpg" alt="Honeywell Logo" style="width: 60px; height: 60px; object-fit: contain;">
+							</div>
+							<div class="achievement-info">
+								<h3>Honeywell Silver Award for "Go Beyond"</h3>
+								<h4>Honeywell</h4>
+								<span class="duration">Mar 2019</span>
+								<p class="achievement-description">Received the prestigious Silver Award for demonstrating "Go Beyond" behavior, showcasing exceptional performance and dedication to exceeding expectations.</p>
+							</div>
+						</div>
+						
+						<div class="achievement-card">
+							<div class="company-logo">
+								<img src="images/honeywell_logo.jpg" alt="Honeywell Logo" style="width: 60px; height: 60px; object-fit: contain;">
+							</div>
+							<div class="achievement-info">
+								<h3>Honeywell Star Award for "Act with Urgency"</h3>
+								<h4>Honeywell</h4>
+								<span class="duration">Nov 2017</span>
+								<p class="achievement-description">Recognized with the Star Award for exceptional ability to act with urgency and deliver results in time-critical situations. Special recognition for LDAP integration: "Fantastic job integrating the LDAP authentication with the Edx platform. You challenged yourself in a short period of time to learn new technologies including Oauth 2.0, Python and the eDx platform itself. Good job."</p>
+							</div>
+						</div>
+						
+						<div class="achievement-card">
+							<div class="company-logo">
+								<img src="images/honeywell_logo.jpg" alt="Honeywell Logo" style="width: 60px; height: 60px; object-fit: contain;">
+							</div>
+							<div class="achievement-info">
+								<h3>Honeywell Bravo Award for "Act with Urgency"</h3>
+								<h4>Honeywell</h4>
+								<span class="duration">Oct 2017</span>
+								<p class="achievement-description">Awarded the Bravo Award for consistently demonstrating urgency in project delivery and problem-solving.</p>
+							</div>
+						</div>
+						
+						<div class="achievement-card">
+							<div class="company-logo">
+								<img src="images/indian_institute_of_technology_roorkee_logo.jfif" alt="IIT Bombay Logo" style="width: 60px; height: 60px; object-fit: contain;">
+							</div>
+							<div class="achievement-info">
+								<h3>Third Prize in Aakash Android App Development Contest</h3>
+								<h4>Indian Institute of Technology-Bombay</h4>
+								<span class="duration">Mar 2013</span>
+								<p class="achievement-description">Secured third place in the prestigious Aakash Android App Development contest, demonstrating exceptional mobile development skills and innovative thinking.</p>
+							</div>
+						</div>
+						
+						<div class="achievement-card">
+							<div class="company-logo">
+							</div>
+							<div class="achievement-info">
+								<h3>0.1% Merit Certificate - All India Senior School Certificate Examination</h3>
+								<h4>Central Board of Secondary Education</h4>
+								<span class="duration">Jan 2010</span>
+								<p class="achievement-description">Achieved 0.1% Merit Certificate by Central Board of Secondary Education for outstanding academic performance in All India Senior School Certificate Examination 2010 (Course: Hindi).</p>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#contact" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Resume -->
+			<!-- Contact -->
+				<section id="contact" class="wrapper style2 special fade">
+					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+					<div class="container">
+						<header>
+							<h2>Get In Touch</h2>
+							<p>Let's connect and discuss opportunities for collaboration</p>
+						</header>
+						<div class="contact-info">
+							<p style="text-align: center; font-size: 1.2em; margin-top: 2em;">
+								<strong>Email:</strong> <a href="mailto:varsh.jain121992@gmail.com">varsh.jain121992@gmail.com</a>
+							</p>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright">
+						<li>&copy; Varsha Jain. All rights reserved.</li>
+					</ul>
+				</footer>
+
+		</div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/jquery.dropotron.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+            <!-- Auto-typing initialization -->
+            <script>
+                // Prevent form resubmission on page refresh
+                if (window.history.replaceState) {
+                    window.history.replaceState(null, null, window.location.href);
+                }
+                
+                document.addEventListener('DOMContentLoaded', function() {
+                    // Auto-typing effect
+                    var typed = new Typed('#typed-text', {
+                        strings: [
+                            'A passionate software developer.',
+                            'A problem solver and creative thinker.',
+                            'A mentor.',
+                            'An AI and Cloud enthusiast.',
+                        ],
+                        typeSpeed: 50,
+                        backSpeed: 30,
+                        backDelay: 2000,
+                        startDelay: 500,
+                        loop: true,
+                        showCursor: true,
+                        cursorChar: '|',
+                        contentType: 'text'
+                    });
+
+                    // Animated Skills Progress Bars with Intersection Observer
+                    const skillBars = document.querySelectorAll('.skill-progress');
+                    const skillItems = document.querySelectorAll('.skill-item');
+
+                    const observerOptions = {
+                        threshold: 0.3,
+                        rootMargin: '0px 0px -50px 0px'
+                    };
+
+                    const skillObserver = new IntersectionObserver(function(entries) {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                const skillItem = entry.target;
+                                const progressBar = skillItem.querySelector('.skill-progress');
+                                const skillLevel = progressBar.getAttribute('data-skill');
+                                
+                                // Add animation class
+                                skillItem.classList.add('observed');
+                                
+                                // Animate the progress bar
+                                setTimeout(() => {
+                                    progressBar.style.width = skillLevel + '%';
+                                }, 200);
+                                
+                                // Stop observing this element
+                                skillObserver.unobserve(skillItem);
+                            }
+                        });
+                    }, observerOptions);
+
+                    // Start observing all skill items
+                    skillItems.forEach(item => {
+                        skillObserver.observe(item);
+                    });
+                });
+            </script>	</body>
 </html>
